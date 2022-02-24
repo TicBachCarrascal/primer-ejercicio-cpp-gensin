@@ -1,9 +1,13 @@
 #include <iostream>
+using namespace std;
 
 int main(){
-	std::cout <<6+7;
-	std::cout <<48%5;
-	std::cout <<"6+7=" << 6+7;
-	std::cout <<"6+7=" <<std::endl << 6+7 <<std::endl ;
+	int numero1, numero2, resta;
+	cout << "Dime un numero: ";
+	cin >> numero1;
+	cout << "Dime otro numero: ";
+	cin >> numero2;
+	resta = numero1 - numero2;
+	cout << "La resta de los dos numeros es: " << resta;
 	return 0;
 }
