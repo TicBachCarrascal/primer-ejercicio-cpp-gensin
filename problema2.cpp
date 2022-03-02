@@ -3,6 +3,7 @@
 
 using namespace std;
 
+// Mejoras: Usar una función para realizar la operación.
 int main(){
 	float PI = 3.14159265;
 	float grados = 30;
