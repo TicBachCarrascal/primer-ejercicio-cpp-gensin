@@ -9,6 +9,7 @@ int main(){
 	cin >> num;
 	cout << "Dame otro numero: ";
 	cin >> num2;
+	
 	resto = num%num2;
 	
 	if (resto==0)
