@@ -10,9 +10,13 @@ int main(){
 	cout << "Dame otro numero: ";
 	cin >> num2;
 	
-	if (num < num2)
+	if (num < num2 && num != num2){
 		cout << "El numero " << num << " es el menor.";
-	else
+	} else if (num2 < num && num !=num2 ){
 		cout << "El numero " << num2 << " es el menor.";
+	} else {
+		cout << "Los numeros son iguales!";
+	}
+		
 	return 0;
 }
