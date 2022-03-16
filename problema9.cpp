@@ -16,7 +16,7 @@ int main(){
 		cout << "El numero " << num << " es el mayor.";
 	} else if (num2 > num && num2 > num3 ){
 		cout << "El numero " << num2 << " es el mayor.";
-	} else if (num3 > num && num3 > num ){
+	} else if (num3 > num && num3 > num2 ){
 		cout << "El numero " << num3 << " es el mayor.";
 	} else {
 		cout << "Los numeros son iguales!";
