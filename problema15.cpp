@@ -7,13 +7,13 @@ int main(){
 	
 	secret = 33;
 	tries = 6;
-	userTries = 1;
+	userTries = 0;
 	
 	cout << "Debe adivinar un numero que he elegido del 1 al 100." << endl;
 	cout << "Tiene " << tries << " intentos." << endl;
 	do{
 		cout << endl;
-		cout << "Intento " << userTries << endl;
+		cout << "Intento " << userTries+1 << endl;
 		cout << "Adivine el numero del 1 al 100: ";
 		cin >> num;
 		if (num > secret){
@@ -28,10 +28,10 @@ int main(){
 	} while (num != secret);
 	
 	if (userTries > tries){
-		cout << "Una lastima, has gastado todos tus intentos" << endl;
+		cout << endl << "Una lastima, has gastado todos tus intentos" << endl;
 		cout << "El numero era " << secret;
 	} else {
-		cout << "Buen trabajo! Ese era el numero." << endl;
+		cout << endl << "Buen trabajo! Ese era el numero." << endl;
 		cout << "Solo has necesitado " << userTries << " intentos.";
 	}
 	return 0;
