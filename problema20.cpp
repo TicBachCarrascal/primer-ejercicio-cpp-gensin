@@ -25,12 +25,12 @@ int main(){
 	cin >> userMonth;
 	
 	for(i=0;i<31;i++){
-		if (calendario[userMonth][i] == 0){
+		if (calendario[userMonth-1][i] == 0){
 			break;
 		}
 	}
 	
-	// la variable i contiene el numero de días de ese mes
+	cout << "El mes elegido tiene " << i << " dias.";
 
 	return 0;
 }

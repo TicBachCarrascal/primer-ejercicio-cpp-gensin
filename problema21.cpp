@@ -9,16 +9,15 @@ int main(){
 		cout << "Dame un numero entero: ";
 		cin << datos[i];
 	}
+	
+	menor = datos[0];
 	for(int i=1;i<11;i++){
-		if (){ //Dato anterior es menor que dato actual
-			//Introducir el dato anterior en variable "menor"
-		} else {
-			//Introducir el dato actual en variable "menor"
+		if (datos[i]<menor){
+			menor = datos[i];
 		}
 	}
 	
-	//Sacar por pantalla la variable menor
-	
+	cout << "El menor de la lista es " << menor;
 	
 	return 0;
 }
