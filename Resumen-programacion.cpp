@@ -2,6 +2,24 @@
 
 using namespace std;
 
+// Funciones
+
+// Funcion que no devuelve nada.
+void escribeDos(){
+	cout << "Dos" << endl;
+}
+
+// Funcion que devuelve siempre lo mismo
+int devuelveDos() {
+	return 2;
+}
+
+// Funcion que devuelve la suma de dos parametros de entrada
+int suma(int a, int b){
+	return a + b;
+}
+
+// Funcion inicial
 int main(){
 	// Variables
 	int numEntero1; // Creo una variable entera.
@@ -9,8 +27,8 @@ int main(){
 	numEntero1 = 0; // Doy valor a una variable.
 	
 	// Arrays
-	int numsEnteros[5]; // Creo un array con 5 posiciones
-	numsEnteros = {10, 30, 2, 69, 43}; // Damos valor al array
+	// Creo un array con 5 posiciones
+	int numsEnteros[5] = {10, 30, 2, 69, 43}; // Damos valor al array
 	
 	// Las posiciones de un array son: 0, 1, 2, 3, 4, ...
 	int posicion1 = numsEnteros[0];
@@ -28,7 +46,7 @@ int main(){
 	// Condicionales
 	if (numEntero1>100){
 		// Si es cierto hago esto.
-	} else if (numEntero<10){
+	} else if (numEntero1<10){
 		// Si no es cierto lo primero pero
 		// es cierto lo segundo hago esto.
 	} else {
@@ -45,6 +63,7 @@ int main(){
 		case 4: // Hago algo si es 2 a 4
 			break;
 		default: // Hago algo si no es ninguno anterior.
+			break;
 	}
 	
 	// Bucles
@@ -61,5 +80,10 @@ int main(){
 	for(int i=0;i<10;i++){
 		// Hace esto, como máximo, 10 veces.
 	}
+	
+	// Llamadas a funciones
+	escribeDos();
+	cout << devuelveDos();
+	cout << suma(3,5);
 	return 0;
 }
