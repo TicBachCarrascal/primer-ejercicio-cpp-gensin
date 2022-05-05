@@ -4,12 +4,7 @@
 
 using namespace std;
 
-int aleatorio(){
-	int num;
-	srand(time(NULL));
-	num=rand()%11;
-	return num;
-}
+ 
 
 int main(){
 	int tries = 0;
