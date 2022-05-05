@@ -7,7 +7,7 @@ int main(){
 	int menor;
 	for (int i=0; i<11;i++){
 		cout << "Dame un numero entero: ";
-		cin << datos[i];
+		cin >> datos[i];
 	}
 	
 	menor = datos[0];
